@@ -148,7 +148,7 @@ synchrony-doc-automation/
 
 1. Clone the repository:
    ```bash
-https://github.com/mollylowell/Synchrony-Financial-RCSA-SKILL.git
+   https://github.com/mollylowell/Synchrony-Financial-RCSA-SKILL.git
    ```
 
 2. Verify Python version:
