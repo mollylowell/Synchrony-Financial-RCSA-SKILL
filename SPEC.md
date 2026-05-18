@@ -1,7 +1,7 @@
 # Feature Specification: Synchrony Documentation Automation Skillset
 
 
-**Owners**:  Molly Lowell , Whitney Robinson , Sheila Green 
+**Owners**:  Molly Lowell , Whitney Robinson , Sheila Green  
 **Input**: User description: "Agent skillset that turns technical repository artifacts into audit-ready compliance documentation using Claude Agent Skills architecture (SKILL.md + scripts + assets)"
 
 
