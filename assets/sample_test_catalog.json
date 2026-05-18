@@ -1,0 +1,64 @@
+{
+  "_meta": {
+    "scale": "demo",
+    "note": "Replace with production data post-handoff"
+  },
+  "tests": [
+    {
+      "id": "TST-001",
+      "file_path": "tests/auth/test_rbac_permissions.py",
+      "file_type": "python",
+      "description": "Verifies that RBAC role assignments enforce correct permission boundaries across application modules",
+      "controls_relevant": ["AC"]
+    },
+    {
+      "id": "TST-002",
+      "file_path": "tests/auth/test_session_timeout.py",
+      "file_type": "python",
+      "description": "Validates that user sessions expire after the configured timeout period and cannot be reused after invalidation",
+      "controls_relevant": ["AC"]
+    },
+    {
+      "id": "TST-003",
+      "file_path": "tests/auth/test_oauth_flow.py",
+      "file_type": "python",
+      "description": "Tests the OAuth2 authentication flow including token issuance, refresh, and revocation",
+      "controls_relevant": ["AC"]
+    },
+    {
+      "id": "TST-004",
+      "file_path": "tests/deploy/test_approval_gate.py",
+      "file_type": "python",
+      "description": "Verifies that the CI/CD pipeline blocks production deployment without required approvals",
+      "controls_relevant": ["CM"]
+    },
+    {
+      "id": "TST-005",
+      "file_path": "tests/deploy/test_rollback.sh",
+      "file_type": "shell",
+      "description": "End-to-end test that triggers a rollback and verifies the system returns to the previous known-good state",
+      "controls_relevant": ["CM"]
+    },
+    {
+      "id": "TST-006",
+      "file_path": "tests/deploy/test_deployment_pipeline.py",
+      "file_type": "python",
+      "description": "Validates that the deployment pipeline executes all required stages in order including build, test, and staging",
+      "controls_relevant": ["CM"]
+    },
+    {
+      "id": "TST-007",
+      "file_path": "tests/data/test_input_validation.py",
+      "file_type": "python",
+      "description": "Tests that invalid input records are rejected with appropriate error messages based on schema constraints",
+      "controls_relevant": ["DQ"]
+    },
+    {
+      "id": "TST-008",
+      "file_path": "tests/monitoring/test_alert_triggers.py",
+      "file_type": "python",
+      "description": "Verifies that alerting rules fire correctly when error rate and latency thresholds are exceeded",
+      "controls_relevant": ["IH"]
+    }
+  ]
+}
