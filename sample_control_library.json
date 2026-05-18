@@ -1,0 +1,91 @@
+{
+  "_meta": {
+    "scale": "demo",
+    "note": "Replace with production data post-handoff"
+  },
+  "controls": [
+    {
+      "id": "AC",
+      "name": "Access Control",
+      "objective": "Ensure system access is restricted to authorized users through authentication, authorization, and session management",
+      "evidence_types": [
+        {
+          "id": "auth_config",
+          "label": "Authentication Configuration",
+          "description": "Configuration files defining authentication mechanisms such as OAuth, SSO, or MFA settings"
+        },
+        {
+          "id": "rbac_policy",
+          "label": "RBAC Policy Definition",
+          "description": "Role-based access control definitions specifying roles, permissions, and access levels"
+        },
+        {
+          "id": "session_management",
+          "label": "Session Management Configuration",
+          "description": "Configuration or code governing session lifecycle including timeout, renewal, and invalidation"
+        }
+      ]
+    },
+    {
+      "id": "CM",
+      "name": "Change Management",
+      "objective": "Ensure all changes to production systems follow approved processes with rollback capability",
+      "evidence_types": [
+        {
+          "id": "change_approval_record",
+          "label": "Change Approval Record",
+          "description": "Documentation or configuration enforcing change approval workflows before production deployment"
+        },
+        {
+          "id": "deployment_config",
+          "label": "Deployment Configuration",
+          "description": "CI/CD pipeline definitions, deployment scripts, or infrastructure-as-code governing production releases"
+        },
+        {
+          "id": "rollback_procedure",
+          "label": "Rollback Procedure",
+          "description": "Documented procedures or automated scripts enabling rollback of failed production changes"
+        }
+      ]
+    },
+    {
+      "id": "DQ",
+      "name": "Data Quality",
+      "objective": "Ensure data inputs are validated and transformations preserve integrity",
+      "evidence_types": [
+        {
+          "id": "input_validation_rule",
+          "label": "Input Validation Rule",
+          "description": "Schema definitions, validation logic, or constraint configurations that enforce data input quality"
+        },
+        {
+          "id": "data_transform_test",
+          "label": "Data Transformation Test",
+          "description": "Test cases verifying that data transformations produce correct and complete output"
+        }
+      ]
+    },
+    {
+      "id": "IH",
+      "name": "Incident Handling",
+      "objective": "Ensure security incidents are detected, responded to, and reviewed",
+      "evidence_types": [
+        {
+          "id": "monitoring_config",
+          "label": "Monitoring Configuration",
+          "description": "Alert rules, log aggregation settings, or monitoring dashboards that detect anomalies and incidents"
+        },
+        {
+          "id": "incident_response_plan",
+          "label": "Incident Response Plan",
+          "description": "Documented procedures for responding to security incidents including escalation paths and communication protocols"
+        },
+        {
+          "id": "postmortem_record",
+          "label": "Postmortem Record",
+          "description": "Post-incident review documents capturing root cause analysis, lessons learned, and corrective actions"
+        }
+      ]
+    }
+  ]
+}

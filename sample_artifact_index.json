@@ -1,0 +1,98 @@
+{
+  "_meta": {
+    "scale": "demo",
+    "note": "Replace with production data post-handoff"
+  },
+  "artifacts": [
+    {
+      "id": "ART-001",
+      "file_path": "auth/oauth_config.yaml",
+      "file_type": "yaml",
+      "description": "OAuth2 provider configuration defining authentication flows, token lifetimes, and allowed redirect URIs"
+    },
+    {
+      "id": "ART-002",
+      "file_path": "auth/mfa_settings.json",
+      "file_type": "json",
+      "description": "Multi-factor authentication settings including enforced methods and bypass rules"
+    },
+    {
+      "id": "ART-003",
+      "file_path": "auth/rbac_roles.yaml",
+      "file_type": "yaml",
+      "description": "Role-based access control definitions mapping roles to permissions across application modules"
+    },
+    {
+      "id": "ART-004",
+      "file_path": "auth/rbac_permissions_matrix.json",
+      "file_type": "json",
+      "description": "Permissions matrix specifying granular access levels per role and resource type"
+    },
+    {
+      "id": "ART-005",
+      "file_path": "auth/session_config.yaml",
+      "file_type": "yaml",
+      "description": "Session management configuration including timeout duration, renewal policy, and invalidation triggers"
+    },
+    {
+      "id": "ART-006",
+      "file_path": "deploy/change_approval_workflow.yaml",
+      "file_type": "yaml",
+      "description": "CI/CD pipeline stage requiring manual approval before production deployment"
+    },
+    {
+      "id": "ART-007",
+      "file_path": "deploy/pr_review_policy.md",
+      "file_type": "markdown",
+      "description": "Pull request review policy requiring minimum reviewers and passing checks before merge"
+    },
+    {
+      "id": "ART-008",
+      "file_path": "deploy/ci_pipeline.yaml",
+      "file_type": "yaml",
+      "description": "CI/CD pipeline definition including build, test, staging, and production deployment stages"
+    },
+    {
+      "id": "ART-009",
+      "file_path": "deploy/terraform_main.tf",
+      "file_type": "terraform",
+      "description": "Infrastructure-as-code defining production environment resources and deployment configuration"
+    },
+    {
+      "id": "ART-010",
+      "file_path": "deploy/rollback_runbook.md",
+      "file_type": "markdown",
+      "description": "Step-by-step rollback procedure for reverting failed production deployments"
+    },
+    {
+      "id": "ART-011",
+      "file_path": "deploy/rollback_script.sh",
+      "file_type": "shell",
+      "description": "Automated rollback script that reverts the last production deployment to the previous known-good state"
+    },
+    {
+      "id": "ART-012",
+      "file_path": "data/input_schema.json",
+      "file_type": "json",
+      "description": "JSON Schema defining required fields, types, and constraints for incoming data records"
+    },
+    {
+      "id": "ART-013",
+      "file_path": "data/validation_rules.yaml",
+      "file_type": "yaml",
+      "description": "Business rule definitions for input data validation including range checks and format requirements"
+    },
+    {
+      "id": "ART-014",
+      "file_path": "monitoring/alerting_rules.yaml",
+      "file_type": "yaml",
+      "description": "Alert rule definitions for detecting anomalies including error rate thresholds and latency spikes"
+    },
+    {
+      "id": "ART-015",
+      "file_path": "monitoring/dashboard_config.json",
+      "file_type": "json",
+      "description": "Monitoring dashboard configuration displaying key system health metrics and incident indicators"
+    }
+  ]
+}
