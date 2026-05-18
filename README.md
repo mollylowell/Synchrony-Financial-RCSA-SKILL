@@ -31,6 +31,9 @@ The **Synchrony Documentation Automation Skillset** is designed for financial in
 
 Built on the **Claude Agent Skills architecture**, the skillset combines deterministic Python scripts with AI-powered reasoning to produce structured markdown reports with citations, confidence scores, and validation checks.
 
+This repository contains Skill 2 (RCSA Control Narrative Generation), owned and built by Molly Lowell. This skill is part of a larger two-skill Synchrony Documentation Automation Skillset built on Claude's Agent Skills architecture
+
+
 ---
 
 ## What It Does
